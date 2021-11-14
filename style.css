@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(103, 93, 103);
+}
+
+#containner{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 30%;
+
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: bisque;
+}
+
+#output{
+    color: bisque;
+    text-align: center;
+    font-size: 25px;
+   
+}
+p:nth-child(even){
+    background-color: rgb(169, 154, 169);
+}
+
+#inputPlace{
+    text-align: center;
+    padding-top: 50px;
+
+}
+#box1{
+    height:25px;
+    background-color:bisque;
+    text-align: center;
+    font-size: 15px;
+    color:black;
+}
+::placeholder{
+    color: rgb(206, 189, 189);
+    font-size: 15px;
+}
+button{
+    height:30px;
+    background-color:bisque;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.btn{
+    height:25px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(87, 73, 56);
+
+}
+    
+    
+    
