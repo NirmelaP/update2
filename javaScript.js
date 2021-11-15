@@ -3,6 +3,8 @@ var studenter = ['Ella', 'Bella', 'Anna', 'Lea','Selma', 'Maja' ];
 // Här anropar jag en funktion som heter upptadetaOutput.
 uppdateraOutput();
 
+
+
 //Här skapar jag funktionen som heter uppdateraOutput.
 function uppdateraOutput(){
 //Här skapar jag en tom variabel som heter ootput.
@@ -10,13 +12,27 @@ var output = "";
 //Här skapar jag for-loop metod som snurrar igenom min aray "var studenter"
 for(i = 0; i< studenter.length; i++){
 //Här skriver jag in data från loopmetoden som jag vill skriva ut på sidan.
-    output += ("<p style='border: solid 1px black'>"+ studenter[i] + " [<span title='Ta Bort " + studenter[i]  +"' onclick='taBort("+ i+")'>X</span>]</br>")
+    output += ("<p style='border: solid 1px black'>"+ studenter[i]
+    +" <button onclick ='editeraNamn("+ i +")'>Editera Namn</button>" 
+    + " [<span title='Ta Bort " + studenter[i]  
+    +"' onclick='taBort("+ i +")'>X</span>]</br>")
 
 }
 //Här använder jag inbyggd metod för att koppla ihop önskad elemennt från HTML och ersätter med min variabel.
 document.getElementById("output").innerHTML = output;
 }
 
+//Här kommer jag skapa funktion som kommer att editera en objekt i aray, den inehå¨ller också en parameter id.
+function editeraNamn(id){
+    //skapar en ny variabel och lagar data som skrivs i propmten och dessutom tar en parameter
+     var newName = prompt("Skriv nytt namn", studenter[id]);
+        //denna tilåter inte att skriva en tom text, dvs bara om det skrivs något körs funktionenn!!
+        if( newName !== null && newName!==""){
+        //lagarar nytt värde på rätt ställe i arrayen gennom att använda parameter "id"
+        studenter[id] = newName;
+        uppdateraOutput(); 
+    }
+}
 
 //Här skapar jag ny funktion addName som har uppgift att lägga till namn.
 function addName(){
