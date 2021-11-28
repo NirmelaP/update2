@@ -7,7 +7,7 @@ class Movies extends React.Component
         movieList:[]
     }
     componentDidMount(){
-        axios.get('movie.json')
+        axios.get('/checkpoint3/movie.json')
         .then(res =>{
             console.log(res.data.Movie);
             this.setState({movieList:res.data.Movie})
