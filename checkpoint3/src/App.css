@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(175, 178, 213);
+}
+.navbar{
+    overflow: hidden;
+    background: bisque;
+    color: black;
+    width: 100%;
+}
+.container{
+    width: 60%;
+    margin:auto;
+}
+.list{
+    width: 60%;
+    float: left;
+    padding: 0;
+    text-align: right;
+}
+.list a{
+    text-decoration: none;
+    color: rgb(228, 138, 138);
+    margin: 0 15px;
+    font-size: 25px;
+}
+.mainContainer{
+    width: 60%;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+.myList{
+    color: rgb(56, 57, 60);
+    font-size: 20px;
+
+}
+.myList li{
+    padding-top: 40px;
+    
+}

@@ -18,15 +18,17 @@ for(i = 0; i< studenter.length; i++){
     +"' onclick='taBort("+ i +")'>X</span>]</br>")
 
 }
-//Här använder jag inbyggd metod för att koppla ihop önskad elemennt från HTML och ersätter med min variabel.
+//Här använder jag inbyggd metod för att koppla ihop önskad elemennt från HTML och ersätter 
+ //med min variabel.
 document.getElementById("output").innerHTML = output;
 }
 
-//Här kommer jag skapa funktion som kommer att editera en objekt i aray, den inehå¨ller också en parameter id.
+//Här kommer jag skapa funktion som kommer att editera en objekt i aray, den inehåller
+// också en parameter id.
 function editeraNamn(id){
-    //skapar en ny variabel och lagar data som skrivs i propmten och dessutom tar en parameter
+//skapar en ny variabel och lagar data som skrivs i propmten och dessutom tar en parameter
      var newName = prompt("Skriv nytt namn", studenter[id]);
-        //denna tilåter inte att skriva en tom text, dvs bara om det skrivs något körs funktionenn!!
+    //denna tilåter inte att skriva en tom text, dvs bara om det skrivs något körs funktionenn!!
         if( newName !== null && newName!==""){
         //lagarar nytt värde på rätt ställe i arrayen gennom att använda parameter "id"
         studenter[id] = newName;

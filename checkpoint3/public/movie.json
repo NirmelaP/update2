@@ -1,0 +1,47 @@
+{
+    "Movie": [
+        {
+            "Title":"Star Wars: Episode IV - A New Hope",
+            "Year":"1977",
+            "Director":"George Lucas",
+            "Actors":[{
+                "MainActors":["Harrison Ford","Carry Fisher","Mark Hamill"],
+                "SupportActors":["Peter Cushing","Anthony Daniels"]  
+        }],
+            "Type":"movie",
+            "Land":"USA"
+        },
+        {
+            "Title":"Superman",
+            "Year":"1978",
+            "Director":"Richard Doner",
+            "Actors":[{
+                "MainActors":["Christopher Reeve","Margot Kidder"],
+                "SupportActors":["Marlon Brando","Gene Hackman"]
+        }],
+            "Type":"movie",
+            "Land":"USA"
+        },
+        {
+            "Title":"Aquaman",
+            "Year":"2018",
+            "Director":"James Wan",
+            "Actors":[{
+                "MainActors":["Jasom Mamoa","Amber Heard"],
+                "SupportActors":["Nicole Kidman","Patric Wilson"]
+        }],
+                "Type":"movie",
+                "Land":"USA"
+        }
+                
+    ]
+}
+            
+
+            
+
+                
+
+
+
+       
